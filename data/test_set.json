@@ -1,0 +1,20 @@
+{
+    "reference_date": "2026-10-03",
+    "examples": [
+        {
+            "text": "dinner w/ sam thurs 7pm @ nandos",
+            "title": "Dinner with Sam",
+            "date": "2026-10-08",
+            "time": "19:00",
+            "location": "Nando's"
+        },
+        {
+            "text": "ai soc meeting tmrw 5pm",
+            "title": "AI Soc meeting",
+            "date": "2026-10-04",
+            "time": "17:00",
+            "location": null
+
+        }
+    ]
+}
