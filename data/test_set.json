@@ -1,20 +1,124 @@
 {
-    "reference_date": "2026-10-03",
-    "examples": [
-        {
-            "text": "dinner w/ sam thurs 7pm @ nandos",
-            "title": "Dinner with Sam",
-            "date": "2026-10-08",
-            "time": "19:00",
-            "location": "Nando's"
-        },
-        {
-            "text": "ai soc meeting tmrw 5pm",
-            "title": "AI Soc meeting",
-            "date": "2026-10-04",
-            "time": "17:00",
-            "location": null
-
-        }
-    ]
+  "examples": [
+    {
+      "id": 1,
+      "text": "dinner w/ sam thurs 7pm @ nandos",
+      "reference_date": "2026-10-03",
+      "title": "Dinner with Sam",
+      "date": "2026-10-08",
+      "time": "19:00",
+      "end_time": null,
+      "location": "Nando's",
+      "ambiguous": false,
+      "note": "synthetic example, not a real message"
+    },
+    {
+      "id": 2,
+      "text": "ai soc meeting tmrw 5pm",
+      "reference_date": "2026-10-03",
+      "title": "AI Soc meeting",
+      "date": "2026-10-04",
+      "time": "17:00",
+      "end_time": null,
+      "location": null,
+      "ambiguous": false,
+      "note": "synthetic example, not a real message"
+    },
+    {
+      "id": 3,
+      "text": "catching up with old friend this friday at 6pm",
+      "reference_date": "2026-10-03",
+      "title": "Catching up with old friend",
+      "date": "2026-10-09",
+      "time": "18:00",
+      "end_time": null,
+      "location": null,
+      "ambiguous": false,
+      "note": null
+    },
+    {
+      "id": 4,
+      "text": "training for Cadent Gas 08:30-15:30. 19/10",
+      "reference_date": "2026-10-03",
+      "title": "Training for Cadent Gas",
+      "date": "2026-10-19",
+      "time": "08:30",
+      "end_time": "15:30",
+      "location": null,
+      "ambiguous": false,
+      "note": "19/10 read as UK day/month"
+    },
+    {
+      "id": 5,
+      "text": "6th October 2026 10:40. As your interview is face to face, on the day please arrive at the William Morris Building.",
+      "reference_date": "2026-10-03",
+      "title": "Interview",
+      "date": "2026-10-06",
+      "time": "10:40",
+      "end_time": null,
+      "location": "William Morris Building",
+      "ambiguous": false,
+      "note": "title not stated in text, inferred from 'interview'"
+    },
+    {
+      "id": 6,
+      "text": "Planning for the future Monday, 19 October 2026 10:00 to 14:00 BST Coventry University, Coach House at the HUB",
+      "reference_date": "2026-10-03",
+      "title": "Planning for the future",
+      "date": "2026-10-19",
+      "time": "10:00",
+      "end_time": "14:00",
+      "location": "Coventry University, Coach House at the HUB",
+      "ambiguous": false,
+      "note": "BST ignored for now"
+    },
+    {
+      "id": 7,
+      "text": "Remember our next upcoming session is wednesday 30th from 5pm til 8pm in the ground floor of the hub! And it is Pjs and Paint🎨",
+      "reference_date": "2026-10-03",
+      "title": "Pjs and Paint",
+      "date": "2026-10-30",
+      "time": "17:00",
+      "end_time": "20:00",
+      "location": "Ground floor of the hub",
+      "ambiguous": true,
+      "note": "REVIEW: Wednesday does not match 30 Oct 2026, which is a Friday. Day number wins, flagged ambiguous"
+    },
+    {
+      "id": 8,
+      "text": "Oct 27 Sep 2026 5.00pm to 6.00pm Asda order",
+      "reference_date": "2026-10-03",
+      "title": "Asda order",
+      "date": null,
+      "time": "17:00",
+      "end_time": "18:00",
+      "location": null,
+      "ambiguous": true,
+      "note": "REVIEW: names two months (Oct and Sep), so the date cannot be resolved. Check the original message"
+    },
+    {
+      "id": 9,
+      "text": "Placement & Study Abroad Returners Wednesday 7th October, 14:00 - 15:30 Are you a second-year undergraduate interested in a year-long placement or study abroad opportunity? The event will be held in the Careers office on the 1st Floor of the Hub.",
+      "reference_date": "2026-10-03",
+      "title": "Placement & Study Abroad Returners",
+      "date": "2026-10-07",
+      "time": "14:00",
+      "end_time": "15:30",
+      "location": "Careers office on the 1st Floor of the Hub",
+      "ambiguous": false,
+      "note": null
+    },
+    {
+      "id": 10,
+      "text": "Join us for an evening of brotherhood, good conversations and a chance to get to know one another. Whether you’re new to Coventry or have been here for a while, everyone’s welcome! 📅 Friday 25th October 🕕 6:00–9:00 PM 📍 Faith Center, The Hub (3rd Floor)",
+      "reference_date": "2026-10-03",
+      "title": "Evening of brotherhood",
+      "date": "2026-10-25",
+      "time": "18:00",
+      "end_time": "21:00",
+      "location": "Faith Center, The Hub (3rd Floor)",
+      "ambiguous": true,
+      "note": "REVIEW: Friday does not match 25 Oct 2026, which is a Sunday. Day and month win, flagged ambiguous"
+    }
+  ]
 }
